@@ -6,11 +6,11 @@ import java.util.Scanner;
 public class DeleteClass {
 	public void delete() {
 		
-		String s1;
+		String s1,s2;
 		String filedelete;
 		
 		
-		String p;
+		/*String p;
 		String n=":\\";
 		String s2;
 		System.out.println("Enter the directory name to search(C,D,E): ");
@@ -18,8 +18,8 @@ public class DeleteClass {
 		@SuppressWarnings("resource")
 		Scanner pc=new Scanner(System.in);
 		p=pc.nextLine();
-		
-		s2=p.concat(n);
+		*/
+		s2="/home/ubuntu/sampleproject/";
 		
 		
 		File fileDir = new File(s2);
@@ -53,9 +53,9 @@ public class DeleteClass {
 		e.printStackTrace();  
 		}  
 	}
-		else {
-			System.out.println(fileDir.getAbsolutePath() +" is not a directory....please check the name\n\n");
-		}
+		//else {
+			//System.out.println(fileDir.getAbsolutePath() +" is not a directory....please check the name\n\n");
+		//}
 		}
 
 }

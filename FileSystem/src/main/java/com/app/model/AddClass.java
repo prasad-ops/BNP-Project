@@ -22,9 +22,9 @@ public class AddClass implements AddInterface {
 				
 		boolean a;		
 		String filename;
-		String s1;
+		String s1,dir;
 		
-		String p;
+		/*String p;
 		String n=":\\";
 		String dir;
 		System.out.println("Enter the directory name to search(C,D,E): ");
@@ -33,10 +33,11 @@ public class AddClass implements AddInterface {
 		Scanner pc=new Scanner(System.in);
 		p=pc.nextLine();
 		
-		dir=p.concat(n);
+		*/dir="/home/ubuntu/sampleproject/";
 
 		File fileDir = new File(dir);
 		if(fileDir.isDirectory()){
+		
 			
 			System.out.print("Enter file name with extension for creating :  ");
 		@SuppressWarnings("resource")
@@ -58,7 +59,7 @@ public class AddClass implements AddInterface {
 
 		
 		//String s2= "E:\\";
-		filename=dir.concat(s1);
+		filename=(dir).concat(s1);
 		
 		try {
 			fos=new FileOutputStream(filename);
@@ -82,8 +83,6 @@ public class AddClass implements AddInterface {
 			}
 		}
 	}}
-	else {
-		System.out.println(fileDir.getAbsolutePath() +" is not a directory....please check the name\n\n");
-	}
+	
 
 }}

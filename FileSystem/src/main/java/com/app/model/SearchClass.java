@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class SearchClass {
 	public void search() {
-		
+		/*
 		String p;
 		String n=":\\";
 		String dir;
@@ -16,8 +16,9 @@ public class SearchClass {
 		@SuppressWarnings("resource")
 		Scanner pc=new Scanner(System.in);
 		p=pc.nextLine();
-		
-		dir=p.concat(n);
+		*/
+		String dir;
+		dir="/home/ubuntu/sampleproject/";
 
 
 		
@@ -48,8 +49,8 @@ public class SearchClass {
 		
 		
 }
-		else {
-			System.out.println(fileDir.getAbsolutePath() +" is not a directory....please check the name\n\n");
-		}
+		//else {
+			//System.out.println(fileDir.getAbsolutePath() +" is not a directory....please check the name\n\n");
+		//}
 		}
 }

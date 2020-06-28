@@ -9,17 +9,9 @@ public class DisplayClass implements Display {
 
 	@Override
 	public void display() {
-		// TODO Auto-generated method stub
-		String p;
-		String n=":\\";
+	
 		String dir;
-		System.out.println("Enter the directory name to search(C,D,E): ");
-
-		@SuppressWarnings("resource")
-		Scanner pc=new Scanner(System.in);
-		p=pc.nextLine();
-		
-		dir=p.concat(n);
+		dir="/home/ubuntu/sampleproject/";
 		File fileDir = new File(dir);
 		if(fileDir.isDirectory()){
 
@@ -37,9 +29,9 @@ public class DisplayClass implements Display {
 			System.out.println("---------------------------------------\n");
 
 		}
-		else{
-			System.out.println(fileDir.getAbsolutePath() + " is not a directory");
-		}
+		//else{
+			//System.out.println(fileDir.getAbsolutePath() + " is not a directory");
+		//}
 	}
 	
 
